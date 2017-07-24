@@ -198,20 +198,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    NSLog(@"viewWillDisappear %p", self.webview);
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    
-    NSLog(@"viewDidDisappear %p", self.webview);
-}
-
 #pragma mark - dealloc
 - (void)dealloc
 {
+    //控制器释放了 _webview并没有释放
+    _webview = nil;
+    
     NSLog(@"insturment检查没有内存泄露 但是不走dealloc 原来是因为之前写在根控制器viewController中 viewController 好坑");
     //insturment检查没有内存泄露 但是不走dealloc 原来是因为再跟控制器中
     NSLog(@"dealloc");
