@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+        
+        <style>
+            
+            input{
+                margin-top: 50px;
+                text-align: center;
+                width: 100%;
+                height: 80px;
+                font-size:60px;
+                color: brown;
+            }
+        </style>
+    </head>
+
+	<body>
+        
+        <input type="button" value="js调用oc方法" onclick="jsCallOc('点击按钮调用了js方法 在didReceiveScriptMessage拦截方法做对应的事情')" />
+        <br />
+        <input type="button" value="prompt" onclick="czyPrompt('这是js弹框内容')"/>
+        <br />
+        <input type="button" value="comfirm" onclick="czyComfirm('confirm')" />
+        <br />
+        <input type="button" value="alert" onclick="czyAlert('alert')"/>
+        <br />
+        
+		<script>
+			var x;
+			var y;
+            //求和
+			function add(a1, a2){
+				return a1+a2;
+			}
+            //customName
+            function jsCallOc(message){
+                window.webkit.messageHandlers.customName.postMessage(message)
+            }
+            //弹出prompt
+            function czyPrompt(str){
+                var name = prompt('这是js弹框提示', str)
+                if (name != '' && name != null) {
+                    alert(name, '点击了确定')
+                }else{
+                    alert('null')
+                }
+            }
+            //弹出confirm
+            function czyComfirm(str){
+            
+                var comf = confirm(str);
+            
+                if (comf == true){
+                    alert('点击了确认')
+                }else{
+                    alert('点击了取消')
+                }
+            
+            }
+            //弹出alert
+            function czyAlert(str){
+            
+                alert(str)
+            }
+		</script>
+		
+	</body>
+</html>
