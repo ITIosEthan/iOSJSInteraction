@@ -7,8 +7,10 @@
 
 
 //结束时需要移除
-[self.webview.configuration.userContentController removeScriptMessageHandlerForName:@"customName"];
+```
+  [self.webview.configuration.userContentController removeScriptMessageHandlerForName:@"customName"];
+```
 
-温馨提示：不要在根控制器中测试内存泄露 不然你会怀疑Instruments  \(^o^)/~
+#### 温馨提示：不要在根控制器中测试内存泄露 不然你会怀疑Instruments和dealloc  哈哈
         
         
