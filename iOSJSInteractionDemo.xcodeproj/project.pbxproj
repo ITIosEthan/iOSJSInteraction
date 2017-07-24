@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0613A2251F25928E00D5D29C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0613A2241F25928E00D5D29C /* main.m */; };
 		0613A2281F25928E00D5D29C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0613A2271F25928E00D5D29C /* AppDelegate.m */; };
-		0613A22B1F25928E00D5D29C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0613A22A1F25928E00D5D29C /* ViewController.m */; };
 		0613A22E1F25928E00D5D29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0613A22C1F25928E00D5D29C /* Main.storyboard */; };
 		0613A2301F25928E00D5D29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0613A22F1F25928E00D5D29C /* Assets.xcassets */; };
 		0613A2331F25928E00D5D29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0613A2311F25928E00D5D29C /* LaunchScreen.storyboard */; };
@@ -43,8 +42,6 @@
 		0613A2241F25928E00D5D29C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0613A2261F25928E00D5D29C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0613A2271F25928E00D5D29C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0613A2291F25928E00D5D29C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0613A22A1F25928E00D5D29C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0613A22D1F25928E00D5D29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0613A22F1F25928E00D5D29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0613A2321F25928E00D5D29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -114,8 +111,6 @@
 				0613A2561F25935500D5D29C /* index.html */,
 				0613A2261F25928E00D5D29C /* AppDelegate.h */,
 				0613A2271F25928E00D5D29C /* AppDelegate.m */,
-				0613A2291F25928E00D5D29C /* ViewController.h */,
-				0613A22A1F25928E00D5D29C /* ViewController.m */,
 				063CFC2E1F25DEE500F57299 /* NewViewController.h */,
 				063CFC2F1F25DEE500F57299 /* NewViewController.m */,
 				063CFC341F25F05A00F57299 /* WkWebviewViewController.h */,
@@ -295,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				063CFC371F25F05A00F57299 /* WkWebviewViewController.m in Sources */,
-				0613A22B1F25928E00D5D29C /* ViewController.m in Sources */,
 				0613A2281F25928E00D5D29C /* AppDelegate.m in Sources */,
 				0613A2251F25928E00D5D29C /* main.m in Sources */,
 				063CFC301F25DEE500F57299 /* NewViewController.m in Sources */,
@@ -449,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TGQ3T5S6T9;
 				INFOPLIST_FILE = iOSJSInteractionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ethan.com.iOSJSInteractionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TGQ3T5S6T9;
 				INFOPLIST_FILE = iOSJSInteractionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ethan.com.iOSJSInteractionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

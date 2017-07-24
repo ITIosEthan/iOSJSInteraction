@@ -184,14 +184,16 @@
 #pragma mark - WKNavigationDelegate
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
 {
-    //结束时需要移除
-    [self.webview.configuration.userContentController removeScriptMessageHandlerForName:@"customName"];
+
 }
 
 
 - (IBAction)deallocJump:(UIButton *)sender {
     
     NSLog(@"czyDealloc %p  %p", self.webview, self.webview.configuration.userContentController);
+    
+    //结束时需要移除
+    [self.webview.configuration.userContentController removeScriptMessageHandlerForName:@"customName"];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -210,7 +212,7 @@
 #pragma mark - dealloc
 - (void)dealloc
 {
-    NSLog(@"insturment检查没有内存泄露 但是不走dealloc 原来是因为之前写在根控制器中 viewController 好坑");
+    NSLog(@"insturment检查没有内存泄露 但是不走dealloc 原来是因为之前写在根控制器viewController中 viewController 好坑");
     //insturment检查没有内存泄露 但是不走dealloc 原来是因为再跟控制器中
     NSLog(@"dealloc");
 }
