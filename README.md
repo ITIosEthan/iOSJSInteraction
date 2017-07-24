@@ -6,8 +6,9 @@
 ##### WKNavigationDelegate 处理加载相关
 
 
-//结束时需要移除
+
 ```
+  //结束时需要移除
   [self.webview.configuration.userContentController removeScriptMessageHandlerForName:@"customName"];
 ```
 
