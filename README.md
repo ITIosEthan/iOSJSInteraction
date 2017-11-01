@@ -14,4 +14,5 @@
 
 #### 温馨提示：不要在根控制器中测试内存泄露 不然你会怀疑Instruments和dealloc  哈哈
         
+#### JSCore参考链接：https://www.qcloud.com/community/article/873202?fromSource=gwzcw.93410.93410.93410
         
